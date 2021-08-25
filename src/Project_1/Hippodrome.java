@@ -15,6 +15,22 @@ public class Hippodrome {
         this.horses = horses;
     }
 
+    void run() throws InterruptedException {
+        for (int i = 0; i < 100; i++) {
+            move();
+            print();
+            Thread.sleep(200);
+        }
+    }
+
+    void move() {
+
+    }
+
+    void print() {
+
+    }
+
     public static void main(String[] args) {
         List<Horse> horses = new ArrayList<>();
         horses.add(new Horse("Rabbit", 3 , 0));
