@@ -24,11 +24,19 @@ public class Hippodrome {
     }
 
     void move() {
-
+        for (int i = 0; i < horses.size(); i++) {
+            horses.get(i).move();
+        }
     }
 
     void print() {
+        for (int i = 0; i < horses.size(); i++) {
+            horses.get(i).print();
+        }
 
+        for (int j = 0; j < 10; j++) {
+            System.out.println();
+        }
     }
 
     public static void main(String[] args) {
