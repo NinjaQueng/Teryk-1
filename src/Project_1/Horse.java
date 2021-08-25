@@ -4,7 +4,7 @@ public class Horse {
     String name;
     double speed;
     double distance;
-    
+
     public Horse(String name, double speed, double distance) {
         this.name = name;
         this.speed = speed;
