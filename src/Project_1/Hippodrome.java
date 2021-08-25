@@ -34,17 +34,16 @@ public class Hippodrome {
             horses.get(i).print();
         }
 
-        for (int j = 0; j < 10; j++) {
+        for (int j = 0; j < 5; j++) {
             System.out.println();
         }
     }
 
     public static void main(String[] args) throws InterruptedException {
-        List<Horse> horses = new ArrayList<>();
-        horses.add(new Horse("Rabbit", 3 , 0));
-        horses.add(new Horse("Lady", 3 , 0));
-        horses.add(new Horse("Spirit", 3 , 0));
-        game = new Hippodrome(horses);
+        game = new Hippodrome(new ArrayList<>());
+        game.getHorses().add(new Horse("Rabbit", 3, 0));
+        game.getHorses().add(new Horse("Lady", 3, 0));
+        game.getHorses().add(new Horse("Spirit", 3, 0));
         game.run();
     }
 }

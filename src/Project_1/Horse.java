@@ -12,11 +12,15 @@ public class Horse {
     }
 
     public void move() {
-
+        distance += speed * Math.random();
     }
 
     public void print() {
-
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < (int) distance; i++) {
+            sb.append(".");
+        }
+        System.out.println(sb + name);
     }
 
     public String getName() {
